@@ -8,7 +8,11 @@ Niborski, Yitskhok. 1999. *Verterbukh fun loshn-koydesh-shtamike verter in yidis
 
 The pronunciation list (*fonetisher indeks/shlisl*) was compiled by Eliezer Niborski and published as a PDF here: https://editions.yiddish.paris/dictionnaire-des-mots-dorigine-hebraique/
 
-This repository contains three files:
+This repository contains five files:
 * The PDF linked above
 * A version in RTF, provided by Eliezer Niborski
 * A text file adapted from the RTF, containing a clean mapping of phonetic forms to standard orthographic forms (with missing inflections added, typos fixed, etc.)
+* A Python script to create a mapping of orthographic forms to phonetic forms, based on above
+* The output file from the Python script
+
+Note: the files may inconsistently use pre-combined Unicode characters (e.g., װ versus וו or ױ versus וי, etc.)
