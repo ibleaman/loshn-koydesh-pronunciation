@@ -24,5 +24,5 @@ for entry in phonetic_forms:
     orthographic_forms[orth].append(phon)
 
 with open(orthographic_list, 'w') as text_file:
-    for orth, phon in orthographic_forms.items():
-        text_file.write(orth + ': ' + str(phon) + '\n')
+    for orth, phon in sorted(orthographic_forms.items()):
+        text_file.write(orth + '\t' + ','.join(phon) + '\n')
