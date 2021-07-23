@@ -13,6 +13,6 @@ This repository contains five files:
 * A version in RTF, provided by Eliezer Niborski
 * A text file adapted from the RTF, containing a clean mapping of phonetic forms to standard orthographic forms (with many missing inflections added, typos fixed, etc.)
 * A Python script to create a reversed mapping of orthographic forms to phonetic forms, based on above
-* The output file from the Python script (in tab- and comma-separated format: `orthographic_form\tphonetic_form1,phonetic_form2`)
+* The output file from the Python script (in tab- and comma-separated format: `orthographic_form  phonetic_form1,phonetic_form2`)
 
 Note: the files may inconsistently use pre-combined Unicode characters (e.g., װ versus וו or ױ versus וי, etc.)
