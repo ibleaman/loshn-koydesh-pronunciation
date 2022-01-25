@@ -49,9 +49,14 @@ for entry in phonetic_forms:
         alph = re.sub(pair[0], pair[1], alph)
 
     if alph not in orthographic_forms:
-        orthographic_forms[alph] = {'orth': orth, 'phon': list()}
-    orthographic_forms[alph]['phon'].append(phon)
+        orthographic_forms[alph] = {orth: [phon]}
+    else:
+        if orth not in orthographic_forms[alph]:
+            orthographic_forms[alph][orth] = [phon]
+        else:
+            orthographic_forms[alph][orth].append(phon)
 
 with open(orthographic_list, 'w') as text_file:
     for alph in sorted(orthographic_forms.keys(), key=lambda word: [alphabet.index(c) for c in word]):
-        text_file.write(orthographic_forms[alph]['orth'] + '\t' + ','.join(orthographic_forms[alph]['phon']) + '\n')
+        for orth in orthographic_forms[alph]:
+            text_file.write(orth + '\t' + ','.join(orthographic_forms[alph][orth]) + '\n')
