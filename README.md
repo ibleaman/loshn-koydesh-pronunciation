@@ -19,7 +19,4 @@ Note: the files may inconsistently use pre-combined Unicode characters (e.g., װ
 
 ## Overriding phonetic rules
 
-If you are maintaining your own rule sets for `orthographic-to-phonetic.txt`
-and/or `phonetic-to-orthographic.txt`, you can override the default rules by
-setting the `LOSHN_KOYDESH_O2P_SRC` and/or `LOSHN_KOYDESH_P2O_SRC` environment
-variables to the file paths of your sources.
+If you are maintaining your own custom mapping files for `orthographic-to-phonetic.txt` and/or `phonetic-to-orthographic.txt`, you can override the defaults by setting the `LOSHN_KOYDESH_O2P_SRC` and/or `LOSHN_KOYDESH_P2O_SRC` environment variables to the file paths of your sources.

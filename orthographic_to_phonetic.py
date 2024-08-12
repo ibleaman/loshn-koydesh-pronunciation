@@ -1,6 +1,5 @@
 from os import environ
 
-
 # input file. Override via env variable.
 phonetic_list = environ.get(
         'LOSHN_KOYDESH_P2O_SRC',
