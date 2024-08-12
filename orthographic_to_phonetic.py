@@ -1,8 +1,14 @@
-# input file
-phonetic_list = 'phonetic-to-orthographic.txt'
+from os import environ
 
-# output_file
-orthographic_list = 'orthographic-to-phonetic.txt'
+# input file. Override via env variable.
+phonetic_list = environ.get(
+        'LOSHN_KOYDESH_P2O_SRC',
+        'phonetic-to-orthographic.txt')
+
+# output_file. Override via env variable.
+orthographic_list = environ.get(
+        'LOSHN_KOYDESH_O2P_SRC',
+        'orthographic-to-phonetic.txt')
 
 import csv
 import re

@@ -16,3 +16,7 @@ This repository contains five files:
 * The output file from the Python script (in tab- and comma-separated format: `orthographic_form	phonetic_form1,phonetic_form2`)
 
 Note: the files may inconsistently use pre-combined Unicode characters (e.g., װ versus וו or ױ versus וי, etc.)
+
+## Overriding phonetic rules
+
+If you are maintaining your own custom mapping files for `orthographic-to-phonetic.txt` and/or `phonetic-to-orthographic.txt`, you can override the defaults by setting the `LOSHN_KOYDESH_O2P_SRC` and/or `LOSHN_KOYDESH_P2O_SRC` environment variables to the file paths of your sources.
